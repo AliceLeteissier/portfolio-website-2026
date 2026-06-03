@@ -256,7 +256,7 @@ a {
 
 .project-links {
   display: flex;
-  gap: 12px;
+  gap: 18px;
   align-items: center;
   margin-top: 4px;
 }
@@ -366,6 +366,7 @@ a {
 
 .ellipse--creative {
   border-color: var(--text-creative);
+  width: 200px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -380,7 +381,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 120px 50px 120px;
+  padding: 140px 50px 100px;
 }
 
 .footer-links a {
@@ -396,6 +397,30 @@ a {
 .footer-links a:hover {
   color: var(--green);
   border-bottom-color: var(--green);
+}
+
+.copyright {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 0 50px 0 0;
+  justify-content: right;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  transition: color 0.25s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.copyright span {
+  color: var(--text-muted);
+  font-size: 24px;
 }
 
 /* ---------- SCROLL ANIMATIONS ---------- */
