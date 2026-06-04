@@ -98,25 +98,6 @@ setTimeout(() => {
   type();
 }, 800);
 
-// ---------- BIO REVEAL + SCROLL LOCK ----------
-const heroBio = document.querySelector(".hero-bio");
-let bioRevealed = false;
-
-// Lock scroll on load
-document.body.style.overflow = "hidden";
-
-window.addEventListener("wheel", () => {
-  if (!bioRevealed) {
-    bioRevealed = true;
-    heroBio.classList.add("visible");
-
-    // Unlock scroll after bio animation finishes
-    setTimeout(() => {
-      document.body.style.overflow = "";
-    }, 900);
-  }
-});
-
 // ---------- HAMBURGER MENU ----------
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobile-nav");

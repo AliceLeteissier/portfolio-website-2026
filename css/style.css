@@ -156,16 +156,9 @@ a {
 .hero-bio {
   opacity: 0;
   transform: translateY(30px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
   max-width: 420px;
   margin-top: 32px;
-}
-
-.hero-bio.visible {
-  opacity: 1;
-  transform: translateY(0);
+  animation: fadeUp 0.8s ease 1.2s forwards;
 }
 
 .hero-bio p {
@@ -486,18 +479,20 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background: var(--darker);
+    height: 50px;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
     z-index: 200;
+    mix-blend-mode: difference;
   }
 
   .mobile-logo img {
-    height: 36px;
+    height: 22px;
     width: auto;
+    mix-blend-mode: difference;
   }
 
   /* Hamburger button */
@@ -571,7 +566,7 @@ a {
 
   /* Push content below fixed header */
   .hero {
-    padding-top: 100px;
+    padding-top: 80px;
     min-height: 100svh;
   }
 
